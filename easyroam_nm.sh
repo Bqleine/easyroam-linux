@@ -29,6 +29,7 @@ legacy="-legacy"  # legacy option
 echo "Checking dependencies:"
 check_dependency "nmcli"
 check_dependency "openssl"
+check_dependency "iw"
 
 ### PROMTS ###
 echo -e "\nSelect PKCS12 (.p12) bundle file:"
