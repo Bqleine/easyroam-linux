@@ -55,7 +55,6 @@ check_dependency() {
 echo "Checking dependencies:"
 check_dependency "nmcli"
 check_dependency "openssl"
-check_dependency "iw"
 
 # PROMTS
 echo
@@ -72,9 +71,9 @@ read -e outputdir_new
 outputdir="${outputdir_new:-$OUTDIR}"
 p12name=$(basename "$p12file")
 
-interfaces=()  # select wireless network interfaces using iw
+interfaces=()  # select wireless network interfaces
 for iface in $(ls /sys/class/net/); do
-    if iw dev "$iface" info &>/dev/null; then
+    if [ -d "/sys/class/net/$iface/wireless" ]; then
         interfaces+=("$iface")
     fi
 done
