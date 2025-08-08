@@ -35,7 +35,7 @@ You can either user `easyroam.sh` to extract the certificate files and set up yo
 > Tested on Fedora Workstation 42
 
 > [!NOTE]
-> For immutable distributions like Fedora Atomic Desktops, refer to [C-3PK's fork](https://github.com/C-3PK/easyroam-linux)
+> For immutable distributions like Fedora Atomic Desktops, refer to [kimuraseki's fork](https://github.com/kimuraseki/easyroam-linux).
 
 1. Download the script
     ```bash
