@@ -18,9 +18,9 @@ provided as a PKCS#12 (.p12) bundle license file.
 
 Result:
   After running this script, you will have the following files extracted:
-  - Client Certificate   (client_cert.pem)
-  - Private Key          (client_pem.key)
-  - Root CA Certificate  (root_ca.pem)
+  - Client Certificate   (easyroam_client_cert.pem)
+  - Private Key          (easyroam_client_pem.key)
+  - Root CA Certificate  (easyroam_root_ca.pem)
 
 Where to get your .p12 license file:
   The .p12 (PKCS#12) license/certificate file can be downloaded from
