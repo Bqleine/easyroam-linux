@@ -103,7 +103,7 @@ if [[ $? -ne 0 ]]; then
 fi
 echo "Done"
 
-cn=$(openssl x509 -noout -subject -in easyroam_client_cert.pem | sed -n 's/^.*CN=\([^,]*\).*$/\1/p')
+cn=$(openssl x509 -noout -subject -in easyroam_client_cert.pem | sed -n 's/^.*CN *= *\([^,]*\).*$/\1/p')
 
 echo -n "Build private key... "
 openssl pkcs12 "$LEGACY" -in "$p12name" -nodes -nocerts -passin pass: | openssl rsa -aes256 -passout pass:"$pkpw" -out easyroam_client_key.pem -legacy 2>/dev/null
